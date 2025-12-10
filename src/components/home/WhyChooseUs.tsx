@@ -53,14 +53,6 @@ const features = [
         colSpan: "md:col-span-1"
     },
     {
-        icon: Dog,
-        title: "Pet Friendly",
-        description: "We welcome your furry friends because they are family too.",
-        color: "text-[#A67C52]",
-        bg: "bg-[#A67C52]/10",
-        colSpan: "md:col-span-1"
-    },
-    {
         icon: Award,
         title: "Experienced Staff",
         description: "Dedicated caregivers with years of experience and genuine compassion.",

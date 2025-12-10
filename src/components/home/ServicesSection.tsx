@@ -8,7 +8,7 @@ import { Check, ArrowRight, Utensils, Bus, Dog, Wifi, Activity, Stethoscope } fr
 const amenities = [
     { icon: Utensils, label: "Gourmet Dining" },
     { icon: Bus, label: "Transportation" },
-    { icon: Dog, label: "Pet Friendly" },
+
     { icon: Wifi, label: "High-Speed WiFi" },
     { icon: Activity, label: "Wellness Programs" },
     { icon: Stethoscope, label: "24/7 Nursing" },
@@ -122,7 +122,7 @@ export default function ServicesSection() {
                         <p className='text-[#8B7355]'>Included with all living options</p>
                     </div>
 
-                    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8'>
+                    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8'>
                         {amenities.map((item, index) => (
                             <div key={index} className='flex flex-col items-center text-center gap-3 group'>
                                 <div className='bg-[#F9F5F0] p-4 rounded-full group-hover:bg-[#F4E4B8] transition-colors duration-300'>

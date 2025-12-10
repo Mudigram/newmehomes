@@ -26,10 +26,10 @@ export default function HeroSection() {
                 <div className='max-w-4xl mx-auto text-center'>
                     {/* Main Headline */}
                     <div className='animate-fade-in-up'>
-                        <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight'>
-                            Your Home Away From Home
-                            <span className='block text-[#F4E4B8] mt-2'>NewMe Independent Living</span>
+                        <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold text-[#F4E4B8]  mb-6 leading-tight'>
+                            NewMe Independent Living
                         </h1>
+                        <h1 className='text-2xl md:text-2xl lg:text-4xl font-bold text-white mt-2 mb-4'>Your Home Away From Home</h1>
                     </div>
 
                     {/* Subheadline */}
@@ -51,8 +51,8 @@ export default function HeroSection() {
                         </Button>
                         <Button
                             size="lg"
-                            variant="outline"
-                            className='border-2 border-white text-white hover:bg-white hover:text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 gap-2'
+                            variant="ghost"
+                            className='border-2 border-white/60 text-white hover:bg-white hover:text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 gap-2'
                         >
                             <Phone className='w-5 h-5' />
                             Call: 682-407-5920
