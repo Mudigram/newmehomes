@@ -84,7 +84,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-[#6B4423] mb-1">Phone</h3>
-                                        <p className="text-[#8B7355]">682-407-5920</p>
+                                        <a href="tel:+16824075920" className="text-[#8B7355] hover:underline" aria-label="Call NewMe at 682-407-5920">682-407-5920</a>
                                         <p className="text-sm text-[#A67C52]">Available during office hours</p>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-[#6B4423] mb-1">Email</h3>
-                                        <p className="text-[#8B7355]">irednewme@gmail.com</p>
+                                        <a href="mailto:irednewme@gmail.com?subject=Contact%20from%20website" className="text-[#8B7355] hover:underline" aria-label="Email NewMe at irednewme@gmail.com">irednewme@gmail.com</a>
                                     </div>
                                 </div>
 
@@ -208,7 +208,12 @@ export default function ContactPage() {
                             },
                             {
                                 question: "How do I apply for admission?",
-                                answer: "Contact us at 682-407-5920 or irednewme@gmail.com to discuss admission. We welcome individuals committed to maintaining a respectful, drug-free, and cooperative environment."
+                                answer: (
+                                    <>
+                                        Contact us at <a href="tel:+16824075920" className="text-[#6B4423] underline">682-407-5920</a> or{' '}
+                                        <a href="mailto:irednewme@gmail.com?subject=Admission%20Inquiry" className="text-[#6B4423] underline">irednewme@gmail.com</a> to discuss admission. We welcome individuals committed to maintaining a respectful, drug-free, and cooperative environment.
+                                    </>
+                                )
                             },
                             {
                                 question: "Are utilities included in the rent?",
@@ -224,7 +229,7 @@ export default function ContactPage() {
     )
 }
 
-function FAQItem({ question, answer }: { question: string, answer: string }) {
+function FAQItem({ question, answer }: { question: string, answer: React.ReactNode }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (

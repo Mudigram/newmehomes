@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Check, ArrowRight, Utensils, Bus, Dog, Wifi, Activity, Stethoscope } from 'lucide-react'
 
@@ -63,11 +64,13 @@ export default function ServicesSection() {
                                     </li>
                                 ))}
                             </ul>
+                            <Link href={"/Services"}>
                             <Button
                                 className='w-full bg-[#A67C52] hover:bg-[#F4E4B8] hover:text-[#6B4423] text-white font-semibold py-6 text-lg rounded-xl transition-all duration-300'
                             >
                                 Learn More
                             </Button>
+                            </Link>
                         </div>
                     </div>
 
@@ -104,11 +107,13 @@ export default function ServicesSection() {
                                     </li>
                                 ))}
                             </ul>
+                            <Link href={"/Services"}>
                             <Button
                                 className='w-full bg-[#A67C52] hover:bg-[#F4E4B8] hover:text-[#6B4423] text-white font-semibold py-6 text-lg rounded-xl transition-all duration-300'
                             >
                                 Learn More
                             </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>

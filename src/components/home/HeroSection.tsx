@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '../ui/button'
-import { Phone, Calendar, Shield, Heart, Clock } from 'lucide-react'
+import { Phone, Calendar, Mail, Shield, Heart, Clock } from 'lucide-react'
 
 export default function HeroSection() {
     return (
@@ -19,7 +19,7 @@ export default function HeroSection() {
                     priority
                 />
                 {/* Gradient Overlay */}
-                <div className='absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70' />
+                <div className='absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/70' />
             </div>
 
             {/* Hero Content */}
@@ -52,13 +52,19 @@ export default function HeroSection() {
                             Learn More
                         </Button>
                         </Link>
-                        <Button
-                            size="lg"
-                            variant="ghost"
-                            className='border-2 border-white/60 text-white hover:bg-white hover:text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 gap-2'
-                        >
-                            <Phone className='w-5 h-5' />
-                            Call: 682-407-5920
+
+                        <Button asChild size="lg" variant="ghost" className='border-2 border-white/60 text-white hover:bg-white hover:text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 gap-2'>
+                            <a href="tel:+16824075920" aria-label="Call NewMe at 682-407-5920">
+                                <Phone className='w-5 h-5' />
+                                Call: 682-407-5920
+                            </a>
+                        </Button>
+
+                        <Button asChild size="lg" className='bg-[#F4E4B8] hover:bg-[#E8DCC8] text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-[#F4E4B8]/50 transition-all duration-300 hover:scale-105 gap-2'>
+                            <a href="mailto:irednewme@gmail.com?subject=Contact%20from%20website" aria-label="Email NewMe at irednewme@gmail.com">
+                                <Mail className='w-5 h-5' />
+                                Email Us
+                            </a>
                         </Button>
                     </div>
 

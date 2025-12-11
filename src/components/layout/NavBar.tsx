@@ -81,9 +81,11 @@ export default function NavBar() {
                     {/* Desktop Call Button */}
                     <div className='hidden lg:block pr-4'>
                         <div className='bg-[#F4E4B8] rounded-xl border border-[#A67C52]'>
-                            <Button variant="ghost" className='gap-2 text-[#6B4423] hover:bg-[#E8DCC8] font-semibold'>
-                                <PhoneOutgoing className='w-4 h-4' />
-                                Call Us
+                            <Button asChild variant="ghost" className='gap-2 text-[#6B4423] hover:bg-[#E8DCC8] font-semibold'>
+                                <a href="tel:+16824075920" aria-label="Call NewMe at 682-407-5920">
+                                    <PhoneOutgoing className='w-4 h-4' />
+                                    Call Us
+                                </a>
                             </Button>
                         </div>
                     </div>
@@ -143,12 +145,11 @@ export default function NavBar() {
 
                     {/* Mobile Call Button */}
                     <div className='p-6 border-t border-white/20'>
-                        <Button
-                            variant="default"
-                            className='w-full bg-[#F4E4B8] text-[#6B4423] hover:bg-[#E8DCC8] gap-2 py-6 text-base font-semibold'
-                        >
-                            <PhoneOutgoing className='w-5 h-5' />
-                            Call Us Now
+                        <Button asChild variant="default" className='w-full bg-[#F4E4B8] text-[#6B4423] hover:bg-[#E8DCC8] gap-2 py-6 text-base font-semibold'>
+                            <a href="tel:+16824075920" aria-label="Call NewMe now at 682-407-5920">
+                                <PhoneOutgoing className='w-5 h-5' />
+                                Call Us Now
+                            </a>
                         </Button>
                     </div>
                 </div>

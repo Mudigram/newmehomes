@@ -39,11 +39,11 @@ export default function Footer() {
                         </li>
                         <li className="flex gap-3 items-center">
                             <Phone size={18} />
-                            <span>682-407-5920</span>
+                            <a href="tel:+16824075920" className="hover:text-white" aria-label="Call NewMe at 682-407-5920">682-407-5920</a>
                         </li>
                         <li className="flex gap-3 items-center">
                             <Mail size={18} />
-                            <span>irednewme@gmail.com</span>
+                            <a href="mailto:irednewme@gmail.com?subject=Contact%20from%20website" className="hover:text-white" aria-label="Email NewMe at irednewme@gmail.com">irednewme@gmail.com</a>
                         </li>
                     </ul>
                 </div>

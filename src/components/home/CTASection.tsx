@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import { Phone, Calendar } from 'lucide-react'
 import { Button } from '../ui/button'
 
@@ -29,6 +30,7 @@ export default function CTASection() {
 
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
+                    <Link href={"/Contact"}>
                     <Button
                         size="lg"
                         className="bg-[#F4E4B8] hover:bg-[#E8DCC8] text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
@@ -36,6 +38,7 @@ export default function CTASection() {
                         <Calendar className="w-5 h-5" />
                         Schedule a Visit
                     </Button>
+                    </Link>
 
                     <Button
                         size="lg"
