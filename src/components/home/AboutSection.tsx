@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Heart, Shield, Users, Home, ArrowRight } from 'lucide-react'
 
@@ -29,16 +30,7 @@ export default function AboutSection() {
                             fill
                             className='object-cover'
                         />
-                        {/* Overlay Badge */}
-                        <div className='absolute bottom-6 left-6 bg-[#6B4423]/95 backdrop-blur-md text-white px-6 py-4 rounded-2xl shadow-xl'>
-                            <div className='flex items-center gap-3'>
-                                <Heart className='w-8 h-8 text-[#F4E4B8]' />
-                                <div>
-                                    <p className='text-2xl font-bold'>20+</p>
-                                    <p className='text-sm text-gray-200'>Years of Care</p>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     {/* Right: Content */}
@@ -58,6 +50,7 @@ export default function AboutSection() {
                         </p>
 
                         {/* CTA Button */}
+                        <Link href={"/about"}>
                         <Button
                             size="lg"
                             className='bg-[#A67C52] hover:bg-[#8B6340] text-white font-semibold px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 gap-2'
@@ -65,6 +58,7 @@ export default function AboutSection() {
                             Learn More About Us
                             <ArrowRight className='w-5 h-5' />
                         </Button>
+                        </Link>
                     </div>
                 </div>
 
