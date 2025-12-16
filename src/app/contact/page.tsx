@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import PageHeader from '@/components/layout/PageHeader'
 import { Button } from '@/components/ui/button'
+import MapComponent from '@/components/MapContainer'
 import { Phone, Mail, MapPin, Clock, Send, ChevronDown, ChevronUp, HelpCircle } from 'lucide-react'
 
 export default function ContactPage() {
@@ -84,7 +85,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-[#6B4423] mb-1">Phone</h3>
-                                        <a href="tel:+16824075920" className="text-[#8B7355] hover:underline" aria-label="Call NewMe at 682-407-5920">682-407-5920</a>
+                                        <a href="tel:+16825593258" className="text-[#8B7355] hover:underline" aria-label="Call NewMe at 682-559-3258">682-559-3258</a>
                                         <p className="text-sm text-[#A67C52]">Available during office hours</p>
                                     </div>
                                 </div>
@@ -105,7 +106,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-[#6B4423] mb-1">Location</h3>
-                                        <p className="text-[#8B7355]">[Address - To Be Updated]<br />[City, State ZIP]</p>
+                                        <p className="text-[#8B7355]">4801 Selkirk Drive<br />Forth Worth, TX 76109</p>
                                     </div>
                                 </div>
 
@@ -124,9 +125,10 @@ export default function ContactPage() {
 
                         {/* Map Placeholder */}
                         <div className="bg-[#E8DCC8] h-[300px] rounded-3xl flex items-center justify-center relative overflow-hidden shadow-inner">
-                            <MapPin className="w-16 h-16 text-[#A67C52] opacity-50" />
-                            <span className="absolute bottom-4 text-[#6B4423] font-medium">Interactive Map Coming Soon</span>
+                            <MapComponent />
+                            <span className="absolute bottom-4 text-[#6B4423] font-medium">Interactive Map</span>
                         </div>
+
                     </div>
 
                     {/* Contact Form */}

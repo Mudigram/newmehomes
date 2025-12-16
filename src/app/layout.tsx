@@ -39,14 +39,14 @@ export default function RootLayout({
     "description": "Safe, supportive, and affordable home environment for adults seeking independence with dignity",
     "url": "https://newmeindependentliving.com",
     "logo": "https://newmeindependentliving.com/assets/logo.png",
-    "telephone": "+1-682-407-5920",
+    "telephone": "+1-682-559-3258",
     "email": "irednewme@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "[City]",
-      "addressRegion": "[State]",
-      "postalCode": "[ZIP]",
-      "streetAddress": "[Address - To Be Updated]"
+      "addressLocality": "Forth Worth",
+      "addressRegion": "TX",
+      "postalCode": "76109",
+      "streetAddress": "4801 Selkirk Drive"
     }
   };
 
@@ -55,15 +55,15 @@ export default function RootLayout({
     "@type": "ResidentialCareOrganization",
     "name": "NewMe Independent Living",
     "description": "Provides safe, supportive, and affordable home environment for independent seniors, military veterans, and adults in life transitions",
-    "telephone": "+1-682-407-5920",
+    "telephone": "+1-682-559-3258",
     "email": "irednewme@gmail.com",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "[City]",
-      "addressRegion": "[State]",
-      "postalCode": "[ZIP]",
-      "streetAddress": "[Address - To Be Updated]"
+      "addressLocality": "Forth Worth",
+      "addressRegion": "TX",
+      "postalCode": "76109",
+      "streetAddress": "4801 Selkirk Drive"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

@@ -35,11 +35,11 @@ export default function Footer() {
                     <ul className="space-y-3 text-[#F4E4B8]">
                         <li className="flex gap-3 items-center">
                             <MapPin size={18} />
-                            <span>[Address - To Be Updated]</span>
+                            <span>4801 Selkirk Drive<br />Forth Worth, TX 76109</span>
                         </li>
                         <li className="flex gap-3 items-center">
                             <Phone size={18} />
-                            <a href="tel:+16824075920" className="hover:text-white" aria-label="Call NewMe at 682-407-5920">682-407-5920</a>
+                            <a href="tel:+1682-559-3258" className="hover:text-white" aria-label="Call NewMe at 682-559-3258">682-559-3258</a>
                         </li>
                         <li className="flex gap-3 items-center">
                             <Mail size={18} />

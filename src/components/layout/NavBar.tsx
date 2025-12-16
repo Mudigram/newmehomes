@@ -82,7 +82,7 @@ export default function NavBar() {
                     <div className='hidden lg:block pr-4'>
                         <div className='bg-[#F4E4B8] rounded-xl border border-[#A67C52]'>
                             <Button asChild variant="ghost" className='gap-2 text-[#6B4423] hover:bg-[#E8DCC8] font-semibold'>
-                                <a href="tel:+16824075920" aria-label="Call NewMe at 682-407-5920">
+                                <a href="tel:+16825593258" aria-label="Call NewMe at 682-559-3258">
                                     <PhoneOutgoing className='w-4 h-4' />
                                     Call Us
                                 </a>
@@ -146,7 +146,7 @@ export default function NavBar() {
                     {/* Mobile Call Button */}
                     <div className='p-6 border-t border-white/20'>
                         <Button asChild variant="default" className='w-full bg-[#F4E4B8] text-[#6B4423] hover:bg-[#E8DCC8] gap-2 py-6 text-base font-semibold'>
-                            <a href="tel:+16824075920" aria-label="Call NewMe now at 682-407-5920">
+                            <a href="tel:+16825593258" aria-label="Call NewMe now at 682-559-3258">
                                 <PhoneOutgoing className='w-5 h-5' />
                                 Call Us Now
                             </a>

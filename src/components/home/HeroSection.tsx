@@ -44,19 +44,19 @@ export default function HeroSection() {
                     {/* CTA Buttons */}
                     <div className='flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in-up animation-delay-400'>
                         <Link href={"/accommodations"}>
-                        <Button
-                            size="lg"
-                            className='bg-[#F4E4B8] hover:bg-[#E8DCC8] text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-[#F4E4B8]/50 transition-all duration-300 hover:scale-105 gap-2'
-                        >
-                            <Calendar className='w-5 h-5' />
-                            Learn More
-                        </Button>
+                            <Button
+                                size="lg"
+                                className='bg-[#F4E4B8] hover:bg-[#E8DCC8] text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-[#F4E4B8]/50 transition-all duration-300 hover:scale-105 gap-2'
+                            >
+                                <Calendar className='w-5 h-5' />
+                                Learn More
+                            </Button>
                         </Link>
 
                         <Button asChild size="lg" variant="ghost" className='border-2 border-white/60 text-white hover:bg-white hover:text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 gap-2'>
-                            <a href="tel:+16824075920" aria-label="Call NewMe at 682-407-5920">
+                            <a href="tel:+1682-559-3258" aria-label="Call NewMe at 682-559-3258">
                                 <Phone className='w-5 h-5' />
-                                Call: 682-407-5920
+                                Call: 682-559-3258
                             </a>
                         </Button>
 

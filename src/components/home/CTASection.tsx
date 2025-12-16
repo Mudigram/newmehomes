@@ -31,13 +31,13 @@ export default function CTASection() {
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
                     <Link href={"/Contact"}>
-                    <Button
-                        size="lg"
-                        className="bg-[#F4E4B8] hover:bg-[#E8DCC8] text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
-                    >
-                        <Calendar className="w-5 h-5" />
-                        Schedule a Visit
-                    </Button>
+                        <Button
+                            size="lg"
+                            className="bg-[#F4E4B8] hover:bg-[#E8DCC8] text-[#6B4423] font-bold text-lg px-8 py-6 rounded-full shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                        >
+                            <Calendar className="w-5 h-5" />
+                            Schedule a Visit
+                        </Button>
                     </Link>
 
                     <Button
@@ -45,8 +45,10 @@ export default function CTASection() {
                         variant="outline"
                         className="bg-white/10 backdrop-blur-md border-2 border-white text-white hover:bg-white hover:text-black font-bold text-lg px-8 py-6 rounded-full shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
                     >
-                        <Phone className="w-5 h-5" />
-                        Call Us Now
+                        <a href="tel:+16825593258" aria-label="Call NewMe at 682-559-3258">
+                            <Phone className="w-5 h-5" />
+                            Call Us Now
+                        </a>
                     </Button>
                 </div>
 
